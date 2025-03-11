@@ -221,7 +221,7 @@ html {
   
   
   
-  @media screen and (max-width:440px) {
+  /* @media screen and (max-width:440px) {
     nav.primary ul {
       flex-direction:column;
       gap:10px;
@@ -232,7 +232,7 @@ html {
     nav.primary ul a {
       display:block;
     }
-  }
+  } */
   
   
   table {
