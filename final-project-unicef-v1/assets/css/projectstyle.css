@@ -1,0 +1,359 @@
+/* CSS Final Project */
+
+/* ------------ Box Sizing Reset ------------ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.img-right {
+  float:right;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  margin:10px 0 10px 20px;
+  max-width: 30vw;
+}
+
+.img-left {
+  float:left;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  margin:10px 20px 10px 0px;
+  max-width: 30vw;
+}
+
+.img-center{
+  display:block;
+  margin:10px auto;
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+
+/* ----------------- Responsive Images --------------*/
+img {
+  max-width:100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-optical-sizing: auto;
+  color: #333;
+  font-weight: 400;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80vw;
+  max-width: 960px;
+  margin: 40px auto;
+}
+
+/* ------------ Header ------------ */
+header.primary {
+  background-color: #1cabe2;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px #000;
+  padding: 20px 40px;
+}
+
+header.primary h1 {
+  font-size: 2.4rem;
+  margin: 20px 0 0;
+}
+
+header.primary h1 a,
+header.primary h2 {
+  color: #fff;
+  text-decoration: none;
+}
+
+header.primary h2 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+header h1,
+header h2 {
+  text-align: center;
+  color: #29627e;
+  padding:10px; 
+}
+
+/* ------------ Navigation ------------ */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #1cabe2;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: #c0c0c0;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #29627e;
+  background-color: #fff;
+}
+
+/* ------------ Fullscreen Image ------------ */
+.fullscreenimage {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.fullscreenimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+figcaption {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* ------------ Articles ------------ */
+#articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+article.post {
+  width: 30%;
+  background-color: #fff;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 0.4s;
+  min-height: 420px;
+}
+
+article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+article img {
+  width: 100%;
+  height: auto;
+}
+
+article.post figcaption {
+  margin-bottom: 10px;
+}
+
+article.post h2 {
+  margin: 10px 0;
+  text-align:left;
+
+}
+
+article.post h2 a {
+  text-decoration: none;
+  color: #1cabe2;
+  text-shadow: 1px 1px #c6c6c6;
+
+}
+
+article.post h2 + p,
+article.post p + p {
+  margin: 10px 0;
+}
+
+/* ------------ Content Area ------------ */
+main #content h2 {
+  color: #1cabe2;
+  text-shadow: 1px 1px #c0c0c0;
+  border-bottom: 1px dotted darkgrey;
+}
+
+/* ------------ Layout Sections ------------ */
+section {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+
+#content {
+  margin-right: 20px;
+}
+
+
+aside {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.widget-left,
+.widget-right {
+  width: 45%;
+}
+
+.widget {
+  background-color: #e7f5f7;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin:10px;
+}
+
+aside .container a {
+  color:#000;
+  display:block;
+  text-align:right;
+}
+
+
+/* ------------ Footer ------------ */
+footer {
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer h6 {
+  font-size: 0.8rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+#colophon {
+  margin-top: 30px;
+  background-color: #1cabe2;
+}
+
+/* ------------ Responsive Design ------------ */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  section,
+  aside,
+  article.post {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+}
+
+
+/* ------------ stories ------------ */
+
+.stories {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.stories h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+.story-card {
+  display: flex;
+  align-items: flex-start;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+
+.story-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+.story-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.story-card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.story-image a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#content h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #000;
+  border-left:7.5px solid #bed3e5;
+  padding: 5px 0 5px 10px;
+}
+
+#content p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
