@@ -54,61 +54,62 @@ body {
 
 /* ------------ Header ------------ */
 header.primary {
-  background-color: #1cabe2;
+  background-color: #0099ff;
   color: #fff;
   text-align: center;
   text-shadow: 1px 1px #000;
-  padding: 20px 40px;
+  opacity:80%;
+  padding: 5px 10px; 
 }
 
 header.primary h1 {
-  font-size: 2.4rem;
-  margin: 20px 0 0;
+    color: #ffffff;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7UPtJxwaeQ7y-qNzQ6zgzGG-sSEKzHlKYg&s);
+    display: block;
+    width: 220px;
+    height: 200px;
+    margin: 0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow:hidden;
 }
 
-header.primary h1 a,
-header.primary h2 {
+header.primary a {
   color: #fff;
   text-decoration: none;
 }
 
-header.primary h2 {
-  font-size: 1.3rem;
-  letter-spacing: 0.2px;
-  margin: 0;
-}
-
-header h1,
-header h2 {
-  text-align: center;
-  color: #29627e;
-  padding:10px; 
-}
-
 /* ------------ Navigation ------------ */
 nav ul {
+  background-color: #0099ff;
+  position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  max-width:500px;
+  margin: 10px auto;
   list-style: none;
-  background-color: #1cabe2;
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 nav ul li a {
   display: block;
   padding: 14px 16px;
   text-decoration: none;
-  color: #ffffff;
-  text-shadow: #c0c0c0;
+  color: #0099ff;
+  text-shadow: #afaeae;
   font-weight: bold;
+  transition:.4s;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 nav ul li a:hover {
-  color: #1cabe2;
-  background-color: #fff;
+  background-color: #ffffff9a;
 }
 
 /* ------------ Fullscreen Image ------------ */
@@ -192,8 +193,9 @@ article.post p + p {
 /* ------------ Content Area ------------ */
 main #content h2 {
   color: #1cabe2;
-  text-shadow: 1px 1px #c0c0c0;
+  text-shadow: 1px 1px #c7baba;
   border-bottom: 1px dotted darkgrey;
+  font-size: 30px;
 }
 
 /* ------------ Layout Sections ------------ */
@@ -261,7 +263,7 @@ footer p {
 
 #colophon {
   margin-top: 30px;
-  background-color: #1cabe2;
+  background-color: #31abfd;
 }
 
 /* ------------ Responsive Design ------------ */
@@ -289,58 +291,67 @@ footer p {
 
 /* ------------ stories ------------ */
 
-.stories {
-  padding: 4rem 2rem;
-  background-color: #f4f4f4;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.stories h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-
-.story-card {
+story-cards {
   display: flex;
-  align-items: flex-start;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 960px;
-  padding: 1.5rem;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-
-.story-image img {
-  width: 300px;
-  height: auto;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  background-color: #fff;
   border-radius: 8px;
-  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
-
-.story-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+.story-cards header {
+  display: flex;
+  width: 100%;
 }
 
-.story-card p {
-  font-size: 1rem;
-  color: #444;
+.story-cards figure {
+  width: 40%;
+  margin: 0;
+  padding: 0;
 }
 
-.story-image a {
-  display: inline-block;
-  margin-top: 1rem;
-  color: #000;
+.story-cards figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 0 0 8px;
+  margin-top:20px;
+}
+
+.story-cards .card-text {
+  padding: 20px;
+  width: 60%;
+}
+
+.story-cards .card-text h3 {
+  font-size: 22px;
+  margin-top: 0;
+  color: #333;
+}
+
+.story-cards .card-text p {
+  font-size: 16px;
+  color: #555;
+  margin-top:10px;
+  margin-bottom: 20px;
+}
+
+.story-cards .card-text a {
+  font-size: 16px;
+  color: #0072ce;
   text-decoration: none;
   font-weight: bold;
 }
+
+.story-cards .card-text a:hover {
+  text-decoration: underline;
+}
+
+
+
+
 
 
 #content h3 {
