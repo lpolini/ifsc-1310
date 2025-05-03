@@ -43,7 +43,7 @@ body {
   font-optical-sizing: auto;
   color: #000000;
   font-weight: 400;
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
 }
 
 .container {
@@ -140,6 +140,7 @@ figcaption {
 }
 
 /* ------------ Articles ------------ */
+
 #articles {
   display: flex;
   flex-wrap: wrap;
@@ -180,7 +181,9 @@ article.post figcaption {
 article.post h2 {
   margin: 10px 0;
   text-align:left;
-
+}
+article.post h2:hover{
+  text-decoration: underline;
 }
 
 article.post h2 a {
