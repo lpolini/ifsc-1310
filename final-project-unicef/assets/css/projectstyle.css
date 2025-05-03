@@ -41,9 +41,9 @@ img {
 body {
   font-family: 'Roboto', sans-serif;
   font-optical-sizing: auto;
-  color: #333;
+  color: #000000;
   font-weight: 400;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
 }
 
 .container {
@@ -54,24 +54,27 @@ body {
 
 /* ------------ Header ------------ */
 header.primary {
-  background-color: #0099ff;
-  color: #fff;
+  background-color: #c9eaf8;
   text-align: center;
-  text-shadow: 1px 1px #000;
+  /*text-shadow: 1px 1px #000000;*/
   opacity:80%;
-  padding: 5px 10px; 
+  padding: 5px 10px;
 }
 
 header.primary h1 {
     color: #ffffff;
-    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7UPtJxwaeQ7y-qNzQ6zgzGG-sSEKzHlKYg&s);
+    background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/UNICEF_Logo.png/1200px-UNICEF_Logo.png);
     display: block;
-    width: 220px;
-    height: 200px;
     margin: 0 auto;
     text-indent: 100%;
     white-space: nowrap;
     overflow:hidden;
+
+    width: 180px; 
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
 }
 
 header.primary a {
@@ -81,7 +84,7 @@ header.primary a {
 
 /* ------------ Navigation ------------ */
 nav ul {
-  background-color: #0099ff;
+  background-color: #c9eaf8;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -101,6 +104,7 @@ nav ul li a {
   padding: 14px 16px;
   text-decoration: none;
   color: #0099ff;
+  background-color: #0099ff;
   text-shadow: #afaeae;
   font-weight: bold;
   transition:.4s;
@@ -110,6 +114,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #ffffff9a;
+  color:#0099ff;
 }
 
 /* ------------ Fullscreen Image ------------ */
@@ -147,7 +152,7 @@ figcaption {
 
 article.post {
   width: 30%;
-  background-color: #fff;
+  background-color: #ffffff;
     display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -180,9 +185,9 @@ article.post h2 {
 
 article.post h2 a {
   text-decoration: none;
-  color: #1cabe2;
+  color: #000;
   text-shadow: 1px 1px #c6c6c6;
-
+  
 }
 
 article.post h2 + p,
@@ -192,9 +197,9 @@ article.post p + p {
 
 /* ------------ Content Area ------------ */
 main #content h2 {
-  color: #1cabe2;
+  color: #0099ff;
   text-shadow: 1px 1px #c7baba;
-  border-bottom: 1px dotted darkgrey;
+  border-bottom: 1px dotted #e0e0e0;
   font-size: 30px;
 }
 
@@ -223,7 +228,7 @@ aside {
 }
 
 .widget {
-  background-color: #e7f5f7;
+  background-color: #ddddddc0;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -263,7 +268,7 @@ footer p {
 
 #colophon {
   margin-top: 30px;
-  background-color: #31abfd;
+  background-color: #c9eaf8;
 }
 
 /* ------------ Responsive Design ------------ */
