@@ -9,6 +9,7 @@ $(document).ready(function() {
       cssEase: 'linear',
       autoplay: true,
       autoplaySpeed: 1000,
+
     });
 
 
